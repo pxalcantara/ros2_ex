@@ -111,18 +111,8 @@ def generate_launch_description():
     start_robot_standalone_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
                 # os.path.join(get_package_share_directory('hoverboard_mvp'), 'spawn_squarbo.launch.py')),
-                os.path.join(launch_dir, 'spawn_squarbo.launch.py')),
+                os.path.join(launch_dir, 'spawn_robot.launch.py')),
         condition=IfCondition(use_simulator))
-    # world_test = ExecuteProcess(
-    #         cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so', empty_world],
-    #         output='screen'),
-
-    # spawn = ExecuteProcess(
-    #        cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py', '-entity',
-    #             'squarbo', '-file', urdf, '-x 0.5', '-y -1.05', '-Y 0.2'],
-    #        output='screen')
-
-    
 
     start_robot_state_publisher_cmd = Node(
         condition=IfCondition(use_robot_state_pub),
@@ -174,8 +164,6 @@ def generate_launch_description():
 
     # Add any conditioned actions
     ld.add_action(start_robot_standalone_cmd)
-    # ld.add_action(world_test)
-    # ld.add_action(spawn)
 
     # Add the actions to launch all of the navigation nodes
     ld.add_action(start_robot_state_publisher_cmd)
