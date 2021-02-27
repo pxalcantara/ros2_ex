@@ -18,7 +18,7 @@ namespace mode_controller {
        std::placeholders::_1, std::placeholders::_2));
 
     // Advertise velocity commands
-    cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/sim/cmd_vel", 10);
+    cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
 
     RCLCPP_INFO(this->get_logger(), "Translate");
   }
@@ -58,11 +58,9 @@ namespace mode_controller {
 
   void ModeController::setModeCB(const std::shared_ptr<example_interfaces::srv::SetBool::Request> _request,
                                             std::shared_ptr<example_interfaces::srv::SetBool::Response> _response) { 
-    RCLCPP_INFO_STREAM(this->get_logger(), "Service: " << semi_autonomous_mode_);
-
     semi_autonomous_mode_ = _request->data;
 
-    RCLCPP_INFO_STREAM(this->get_logger(), "Service: " << semi_autonomous_mode_);
+    RCLCPP_INFO_STREAM(this->get_logger(), "Semi Autonomous mode set to: " << semi_autonomous_mode_);
 
     _response->success = true; 
   }

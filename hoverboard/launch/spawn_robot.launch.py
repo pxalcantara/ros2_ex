@@ -19,7 +19,7 @@ def generate_launch_description():
             
         ExecuteProcess(
            cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py', '-entity',
-                'squarbo', '-file', urdf, '-x 0.5', '-y 2.05' ],
+                'hoverboard', '-file', urdf, '-x 0.5', '-y 0.05' ],
            output='screen'),
 
     ])

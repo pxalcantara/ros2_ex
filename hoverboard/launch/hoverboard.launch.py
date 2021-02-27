@@ -30,8 +30,6 @@ def generate_launch_description():
             launch_arguments={'world': world_path}.items(),
     )
 
-
-
     # teleop node
     teleop = Node(
         package='teleop_twist_keyboard',
@@ -51,23 +49,9 @@ def generate_launch_description():
     spawn = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
-        arguments=['-entity', 'squarbo', '-robot_namespace', 'robot1', '-x', '0.0', '-y', '0.0', '-z', '0.0', '-file', urdf_file],
-        output='screen',
-        remappings=[('/tf', '/robot1/tf')]
+        arguments=['-entity', 'squarbo', '-x', '0.0', '-y', '0.0', '-z', '0.0', '-file', urdf_file],
+        output='screen'
     )
-
-    rviz_config_dir = os.path.join(
-    get_package_share_directory('nav2_bringup'),
-    'rviz',
-    'nav2_default_view.rviz')
-
-    rviz = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
-        arguments=['-d', rviz_config_dir],
-        parameters=[{'use_sim_time': False}],
-        output='screen')
 
     move_controller_node = Node(
         package='hoverboard_mvp',
@@ -75,10 +59,9 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        # gz_launch,
+        gz_launch,
         # move_controller_node
-        # spawn,
-        rviz
+        spawn
 
        
     ])
