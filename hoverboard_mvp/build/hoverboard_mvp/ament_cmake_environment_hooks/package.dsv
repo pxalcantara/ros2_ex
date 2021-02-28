@@ -1,0 +1,4 @@
+source;share/hoverboard_mvp/local_setup.bash
+source;share/hoverboard_mvp/local_setup.dsv
+source;share/hoverboard_mvp/local_setup.sh
+source;share/hoverboard_mvp/local_setup.zsh

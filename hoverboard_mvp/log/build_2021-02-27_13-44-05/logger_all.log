@@ -1,0 +1,109 @@
+[0.365s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'hoverboard_mvp']
+[0.365s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1141826070>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['hoverboard_mvp'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1141826070>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f11418265b0>)
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.381s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.381s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.381s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.381s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.381s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.381s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.419s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'hoverboard_mvp'
+[0.419s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.419s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_mvp' build argument 'cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_mvp' build argument 'cmake_target' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_mvp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_mvp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_mvp' build argument 'cmake_clean_first' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_mvp' build argument 'cmake_force_configure' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_mvp' build argument 'ament_cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_mvp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'hoverboard_mvp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.473s] DEBUG:colcon.colcon_core.verb:Building package 'hoverboard_mvp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp', 'merge_install': False, 'path': '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp', 'symlink_install': False, 'test_result_base': None}
+[0.474s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.478s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.479s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp' with build type 'ament_cmake'
+[0.479s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp'
+[0.486s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.487s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.487s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.496s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.496s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/noetic'
+[0.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp': CMAKE_PREFIX_PATH=/root/home/foxy_ws/install/zero_planner:/root/home/foxy_ws/install/turtlebot3_simulations:/root/home/foxy_ws/install/turtlebot3_gazebo:/root/home/foxy_ws/install/turtlebot3:/root/home/foxy_ws/install/turtlebot3_bringup:/root/home/foxy_ws/install/turtlebot3_node:/root/home/foxy_ws/install/turtlebot3_navigation2:/root/home/foxy_ws/install/turtlebot3_fake_node:/root/home/foxy_ws/install/turtlebot3_description:/root/home/foxy_ws/install/turtlebot3_cartographer:/root/home/foxy_ws/install/squarbo_simulation:/root/home/foxy_ws/install/squarbo_description:/root/home/foxy_ws/install/nav2_straightline_planner:/root/home/foxy_ws/install/my_package:/root/home/foxy_ws/install/hoverboard_mvp:/root/home/foxy_ws/install/dolly:/root/home/foxy_ws/install/dolly_gazebo:/root/home/foxy_ws/install/dolly_follow:/root/home/foxy_ws/install/turtlebot3_teleop:/root/home/foxy_ws/install/turtlebot3_example:/root/home/foxy_ws/install/squarbo_gazebo:/opt/ros/foxy:/opt/ros/noetic /usr/bin/cmake --build /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp -- -j12 -l12
+[8.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp' returned '0': CMAKE_PREFIX_PATH=/root/home/foxy_ws/install/zero_planner:/root/home/foxy_ws/install/turtlebot3_simulations:/root/home/foxy_ws/install/turtlebot3_gazebo:/root/home/foxy_ws/install/turtlebot3:/root/home/foxy_ws/install/turtlebot3_bringup:/root/home/foxy_ws/install/turtlebot3_node:/root/home/foxy_ws/install/turtlebot3_navigation2:/root/home/foxy_ws/install/turtlebot3_fake_node:/root/home/foxy_ws/install/turtlebot3_description:/root/home/foxy_ws/install/turtlebot3_cartographer:/root/home/foxy_ws/install/squarbo_simulation:/root/home/foxy_ws/install/squarbo_description:/root/home/foxy_ws/install/nav2_straightline_planner:/root/home/foxy_ws/install/my_package:/root/home/foxy_ws/install/hoverboard_mvp:/root/home/foxy_ws/install/dolly:/root/home/foxy_ws/install/dolly_gazebo:/root/home/foxy_ws/install/dolly_follow:/root/home/foxy_ws/install/turtlebot3_teleop:/root/home/foxy_ws/install/turtlebot3_example:/root/home/foxy_ws/install/squarbo_gazebo:/opt/ros/foxy:/opt/ros/noetic /usr/bin/cmake --build /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp -- -j12 -l12
+[8.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp': CMAKE_PREFIX_PATH=/root/home/foxy_ws/install/zero_planner:/root/home/foxy_ws/install/turtlebot3_simulations:/root/home/foxy_ws/install/turtlebot3_gazebo:/root/home/foxy_ws/install/turtlebot3:/root/home/foxy_ws/install/turtlebot3_bringup:/root/home/foxy_ws/install/turtlebot3_node:/root/home/foxy_ws/install/turtlebot3_navigation2:/root/home/foxy_ws/install/turtlebot3_fake_node:/root/home/foxy_ws/install/turtlebot3_description:/root/home/foxy_ws/install/turtlebot3_cartographer:/root/home/foxy_ws/install/squarbo_simulation:/root/home/foxy_ws/install/squarbo_description:/root/home/foxy_ws/install/nav2_straightline_planner:/root/home/foxy_ws/install/my_package:/root/home/foxy_ws/install/hoverboard_mvp:/root/home/foxy_ws/install/dolly:/root/home/foxy_ws/install/dolly_gazebo:/root/home/foxy_ws/install/dolly_follow:/root/home/foxy_ws/install/turtlebot3_teleop:/root/home/foxy_ws/install/turtlebot3_example:/root/home/foxy_ws/install/squarbo_gazebo:/opt/ros/foxy:/opt/ros/noetic /usr/bin/cmake --install /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp
+[8.723s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hoverboard_mvp)
+[8.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp' returned '0': CMAKE_PREFIX_PATH=/root/home/foxy_ws/install/zero_planner:/root/home/foxy_ws/install/turtlebot3_simulations:/root/home/foxy_ws/install/turtlebot3_gazebo:/root/home/foxy_ws/install/turtlebot3:/root/home/foxy_ws/install/turtlebot3_bringup:/root/home/foxy_ws/install/turtlebot3_node:/root/home/foxy_ws/install/turtlebot3_navigation2:/root/home/foxy_ws/install/turtlebot3_fake_node:/root/home/foxy_ws/install/turtlebot3_description:/root/home/foxy_ws/install/turtlebot3_cartographer:/root/home/foxy_ws/install/squarbo_simulation:/root/home/foxy_ws/install/squarbo_description:/root/home/foxy_ws/install/nav2_straightline_planner:/root/home/foxy_ws/install/my_package:/root/home/foxy_ws/install/hoverboard_mvp:/root/home/foxy_ws/install/dolly:/root/home/foxy_ws/install/dolly_gazebo:/root/home/foxy_ws/install/dolly_follow:/root/home/foxy_ws/install/turtlebot3_teleop:/root/home/foxy_ws/install/turtlebot3_example:/root/home/foxy_ws/install/squarbo_gazebo:/opt/ros/foxy:/opt/ros/noetic /usr/bin/cmake --install /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp
+[8.733s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp' for CMake module files
+[8.735s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp' for CMake config files
+[8.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_mvp', 'cmake_prefix_path')
+[8.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/cmake_prefix_path.ps1'
+[8.738s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/cmake_prefix_path.dsv'
+[8.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/cmake_prefix_path.sh'
+[8.751s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib'
+[8.752s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/bin'
+[8.752s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/pkgconfig/hoverboard_mvp.pc'
+[8.752s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/python3.8/site-packages'
+[8.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_mvp', 'pythonpath')
+[8.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/pythonpath.ps1'
+[8.754s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/pythonpath.dsv'
+[8.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/pythonpath.sh'
+[8.757s] INFO:colcon.colcon_core.shell:Creating package script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.ps1'
+[8.760s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.dsv'
+[8.762s] INFO:colcon.colcon_core.shell:Creating package script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.sh'
+[8.764s] INFO:colcon.colcon_core.shell:Creating package script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.bash'
+[8.766s] INFO:colcon.colcon_core.shell:Creating package script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.zsh'
+[8.768s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/colcon-core/packages/hoverboard_mvp)
+[8.805s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hoverboard_mvp)
+[8.807s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp' for CMake module files
+[8.809s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp' for CMake config files
+[8.809s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_mvp', 'cmake_prefix_path')
+[8.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/cmake_prefix_path.ps1'
+[8.811s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/cmake_prefix_path.dsv'
+[8.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/cmake_prefix_path.sh'
+[8.813s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib'
+[8.813s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/bin'
+[8.813s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/pkgconfig/hoverboard_mvp.pc'
+[8.813s] Level 1:colcon.colcon_core.environment:checking '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/python3.8/site-packages'
+[8.813s] Level 1:colcon.colcon_core.shell:create_environment_hook('hoverboard_mvp', 'pythonpath')
+[8.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/pythonpath.ps1'
+[8.815s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/pythonpath.dsv'
+[8.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/hook/pythonpath.sh'
+[8.817s] INFO:colcon.colcon_core.shell:Creating package script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.ps1'
+[8.817s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.dsv'
+[8.818s] INFO:colcon.colcon_core.shell:Creating package script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.sh'
+[8.819s] INFO:colcon.colcon_core.shell:Creating package script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.bash'
+[8.819s] INFO:colcon.colcon_core.shell:Creating package script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.zsh'
+[8.820s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/colcon-core/packages/hoverboard_mvp)
+[8.820s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.821s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.821s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.821s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.840s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[8.840s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.840s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.840s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.883s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[8.883s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.885s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/local_setup.ps1'
+[8.888s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/_local_setup_util_ps1.py'
+[8.891s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/setup.ps1'
+[8.900s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/local_setup.sh'
+[8.901s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/_local_setup_util_sh.py'
+[8.902s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/setup.sh'
+[8.908s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/local_setup.bash'
+[8.909s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/setup.bash'
+[8.918s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/local_setup.zsh'
+[8.919s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/setup.zsh'

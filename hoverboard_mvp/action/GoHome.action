@@ -1,0 +1,10 @@
+#goal definition
+bool start
+---
+#result definition
+
+bool success
+---
+#feedback definition
+# percentage of the path that was already concluded
+float32 path_percentage

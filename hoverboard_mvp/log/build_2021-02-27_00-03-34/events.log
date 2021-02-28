@@ -1,0 +1,253 @@
+[0.000000] (-) TimerEvent: {}
+[0.000249] (hoverboard_mvp) JobQueued: {'identifier': 'hoverboard_mvp', 'dependencies': OrderedDict()}
+[0.000305] (hoverboard_mvp) JobStarted: {'identifier': 'hoverboard_mvp'}
+[0.028832] (hoverboard_mvp) JobProgress: {'identifier': 'hoverboard_mvp', 'progress': 'cmake'}
+[0.029226] (hoverboard_mvp) Command: {'cmd': ['/usr/bin/cmake', '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp', '-DCMAKE_INSTALL_PREFIX=/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp'], 'cwd': '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'fa5be3975c43'), ('ROS_PACKAGE_PATH', '/opt/ros/noetic/share'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/home/foxy_ws/install/zero_planner/lib:/root/home/foxy_ws/install/nav2_straightline_planner/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/opt/ros/noetic/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/home/foxy_ws/src/ros2_ex'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/home/foxy_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/noetic/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/root/home/foxy_ws/install/dolly_gazebo/share/dolly_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('AMENT_PREFIX_PATH', '/root/home/foxy_ws/install/zero_planner:/root/home/foxy_ws/install/turtlebot3_simulations:/root/home/foxy_ws/install/turtlebot3_gazebo:/root/home/foxy_ws/install/turtlebot3:/root/home/foxy_ws/install/turtlebot3_teleop:/root/home/foxy_ws/install/turtlebot3_bringup:/root/home/foxy_ws/install/turtlebot3_node:/root/home/foxy_ws/install/turtlebot3_navigation2:/root/home/foxy_ws/install/turtlebot3_fake_node:/root/home/foxy_ws/install/turtlebot3_example:/root/home/foxy_ws/install/turtlebot3_description:/root/home/foxy_ws/install/turtlebot3_cartographer:/root/home/foxy_ws/install/squarbo_simulation:/root/home/foxy_ws/install/squarbo_gazebo:/root/home/foxy_ws/install/squarbo_description:/root/home/foxy_ws/install/nav2_straightline_planner:/root/home/foxy_ws/install/my_package:/root/home/foxy_ws/install/hoverboard_mvp:/root/home/foxy_ws/install/dolly:/root/home/foxy_ws/install/dolly_gazebo:/root/home/foxy_ws/install/dolly_follow:/opt/ros/foxy'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:/root/home/foxy_ws/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/home/foxy_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/root/home/foxy_ws/install/turtlebot3_example/lib/python3.8/site-packages:/root/home/foxy_ws/install/squarbo_gazebo/lib/python3.8/site-packages:/root/home/foxy_ws/install/hoverboard_mvp/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/home/foxy_ws/install/zero_planner:/root/home/foxy_ws/install/turtlebot3_simulations:/root/home/foxy_ws/install/turtlebot3_gazebo:/root/home/foxy_ws/install/turtlebot3:/root/home/foxy_ws/install/turtlebot3_bringup:/root/home/foxy_ws/install/turtlebot3_node:/root/home/foxy_ws/install/turtlebot3_navigation2:/root/home/foxy_ws/install/turtlebot3_fake_node:/root/home/foxy_ws/install/turtlebot3_description:/root/home/foxy_ws/install/turtlebot3_cartographer:/root/home/foxy_ws/install/squarbo_simulation:/root/home/foxy_ws/install/squarbo_description:/root/home/foxy_ws/install/nav2_straightline_planner:/root/home/foxy_ws/install/my_package:/root/home/foxy_ws/install/hoverboard_mvp:/root/home/foxy_ws/install/dolly:/root/home/foxy_ws/install/dolly_gazebo:/root/home/foxy_ws/install/dolly_follow:/root/home/foxy_ws/install/turtlebot3_teleop:/root/home/foxy_ws/install/turtlebot3_example:/root/home/foxy_ws/install/squarbo_gazebo:/opt/ros/foxy:/opt/ros/noetic')]), 'shell': False}
+[0.098367] (-) TimerEvent: {}
+[0.199322] (-) TimerEvent: {}
+[0.260949] (hoverboard_mvp) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[0.299419] (-) TimerEvent: {}
+[0.399718] (-) TimerEvent: {}
+[0.402041] (hoverboard_mvp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[0.416949] (hoverboard_mvp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.499927] (-) TimerEvent: {}
+[0.544375] (hoverboard_mvp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.547029] (hoverboard_mvp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.600293] (-) TimerEvent: {}
+[0.685410] (hoverboard_mvp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.700872] (-) TimerEvent: {}
+[0.725281] (hoverboard_mvp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.726375] (hoverboard_mvp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.733124] (hoverboard_mvp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.801007] (-) TimerEvent: {}
+[0.875070] (hoverboard_mvp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.877683] (hoverboard_mvp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.901137] (-) TimerEvent: {}
+[0.997167] (hoverboard_mvp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.001269] (-) TimerEvent: {}
+[1.024864] (hoverboard_mvp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.026290] (hoverboard_mvp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.041434] (hoverboard_mvp) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.098577] (hoverboard_mvp) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") \n'}
+[1.098981] (hoverboard_mvp) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.101337] (-) TimerEvent: {}
+[1.201599] (-) TimerEvent: {}
+[1.301940] (-) TimerEvent: {}
+[1.402269] (-) TimerEvent: {}
+[1.502744] (-) TimerEvent: {}
+[1.603399] (-) TimerEvent: {}
+[1.628173] (hoverboard_mvp) StdoutLine: {'line': b'-- Found rclcpp: 2.3.0 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.703680] (-) TimerEvent: {}
+[1.804298] (-) TimerEvent: {}
+[1.814436] (hoverboard_mvp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.837140] (hoverboard_mvp) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.904390] (-) TimerEvent: {}
+[2.004767] (-) TimerEvent: {}
+[2.105132] (-) TimerEvent: {}
+[2.129158] (hoverboard_mvp) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.205348] (-) TimerEvent: {}
+[2.227694] (hoverboard_mvp) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[2.305456] (-) TimerEvent: {}
+[2.405765] (-) TimerEvent: {}
+[2.446051] (hoverboard_mvp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.505989] (-) TimerEvent: {}
+[2.585009] (hoverboard_mvp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.590032] (hoverboard_mvp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.592689] (hoverboard_mvp) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.606165] (-) TimerEvent: {}
+[2.700814] (hoverboard_mvp) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.701325] (hoverboard_mvp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.706240] (-) TimerEvent: {}
+[2.806664] (-) TimerEvent: {}
+[2.824754] (hoverboard_mvp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[2.825450] (hoverboard_mvp) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.906816] (-) TimerEvent: {}
+[2.939578] (hoverboard_mvp) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.939912] (hoverboard_mvp) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[3.007027] (-) TimerEvent: {}
+[3.065627] (hoverboard_mvp) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[3.068018] (hoverboard_mvp) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.107118] (-) TimerEvent: {}
+[3.207485] (-) TimerEvent: {}
+[3.307878] (-) TimerEvent: {}
+[3.408219] (-) TimerEvent: {}
+[3.430124] (hoverboard_mvp) StdoutLine: {'line': b'-- Found rclpy: 1.0.5 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[3.435955] (hoverboard_mvp) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.3 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[3.508370] (-) TimerEvent: {}
+[3.511232] (hoverboard_mvp) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.3 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[3.608472] (-) TimerEvent: {}
+[3.685555] (hoverboard_mvp) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.0 (/opt/ros/foxy/share/example_interfaces/cmake)\n'}
+[3.708641] (-) TimerEvent: {}
+[3.809015] (-) TimerEvent: {}
+[3.909439] (-) TimerEvent: {}
+[3.950014] (hoverboard_mvp) StdoutLine: {'line': b'-- Found nav2_common: 0.4.5 (/opt/ros/foxy/share/nav2_common/cmake)\n'}
+[3.955171] (hoverboard_mvp) StdoutLine: {'line': b'-- Found navigation2: 0.4.5 (/opt/ros/foxy/share/navigation2/cmake)\n'}
+[4.006571] (hoverboard_mvp) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[4.009640] (-) TimerEvent: {}
+[4.110248] (-) TimerEvent: {}
+[4.175320] (hoverboard_mvp) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.183606] (hoverboard_mvp) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.183967] (hoverboard_mvp) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/include\n'}
+[4.184221] (hoverboard_mvp) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.192762] (hoverboard_mvp) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.193185] (hoverboard_mvp) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.195446] (hoverboard_mvp) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.198718] (hoverboard_mvp) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.201431] (hoverboard_mvp) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[4.210312] (hoverboard_mvp) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.210653] (-) TimerEvent: {}
+[4.210896] (hoverboard_mvp) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.213192] (hoverboard_mvp) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.220671] (hoverboard_mvp) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.243140] (hoverboard_mvp) StdoutLine: {'line': b'-- Generating done\n'}
+[4.246281] (hoverboard_mvp) StdoutLine: {'line': b'-- Build files have been written to: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp\n'}
+[4.259074] (hoverboard_mvp) CommandEnded: {'returncode': 0}
+[4.260198] (hoverboard_mvp) JobProgress: {'identifier': 'hoverboard_mvp', 'progress': 'build'}
+[4.261630] (hoverboard_mvp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp', '--', '-j12', '-l12'], 'cwd': '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'fa5be3975c43'), ('ROS_PACKAGE_PATH', '/opt/ros/noetic/share'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/home/foxy_ws/install/zero_planner/lib:/root/home/foxy_ws/install/nav2_straightline_planner/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/opt/ros/noetic/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/home/foxy_ws/src/ros2_ex'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/home/foxy_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/noetic/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/root/home/foxy_ws/install/dolly_gazebo/share/dolly_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('AMENT_PREFIX_PATH', '/root/home/foxy_ws/install/zero_planner:/root/home/foxy_ws/install/turtlebot3_simulations:/root/home/foxy_ws/install/turtlebot3_gazebo:/root/home/foxy_ws/install/turtlebot3:/root/home/foxy_ws/install/turtlebot3_teleop:/root/home/foxy_ws/install/turtlebot3_bringup:/root/home/foxy_ws/install/turtlebot3_node:/root/home/foxy_ws/install/turtlebot3_navigation2:/root/home/foxy_ws/install/turtlebot3_fake_node:/root/home/foxy_ws/install/turtlebot3_example:/root/home/foxy_ws/install/turtlebot3_description:/root/home/foxy_ws/install/turtlebot3_cartographer:/root/home/foxy_ws/install/squarbo_simulation:/root/home/foxy_ws/install/squarbo_gazebo:/root/home/foxy_ws/install/squarbo_description:/root/home/foxy_ws/install/nav2_straightline_planner:/root/home/foxy_ws/install/my_package:/root/home/foxy_ws/install/hoverboard_mvp:/root/home/foxy_ws/install/dolly:/root/home/foxy_ws/install/dolly_gazebo:/root/home/foxy_ws/install/dolly_follow:/opt/ros/foxy'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:/root/home/foxy_ws/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/home/foxy_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/root/home/foxy_ws/install/turtlebot3_example/lib/python3.8/site-packages:/root/home/foxy_ws/install/squarbo_gazebo/lib/python3.8/site-packages:/root/home/foxy_ws/install/hoverboard_mvp/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/home/foxy_ws/install/zero_planner:/root/home/foxy_ws/install/turtlebot3_simulations:/root/home/foxy_ws/install/turtlebot3_gazebo:/root/home/foxy_ws/install/turtlebot3:/root/home/foxy_ws/install/turtlebot3_bringup:/root/home/foxy_ws/install/turtlebot3_node:/root/home/foxy_ws/install/turtlebot3_navigation2:/root/home/foxy_ws/install/turtlebot3_fake_node:/root/home/foxy_ws/install/turtlebot3_description:/root/home/foxy_ws/install/turtlebot3_cartographer:/root/home/foxy_ws/install/squarbo_simulation:/root/home/foxy_ws/install/squarbo_description:/root/home/foxy_ws/install/nav2_straightline_planner:/root/home/foxy_ws/install/my_package:/root/home/foxy_ws/install/hoverboard_mvp:/root/home/foxy_ws/install/dolly:/root/home/foxy_ws/install/dolly_gazebo:/root/home/foxy_ws/install/dolly_follow:/root/home/foxy_ws/install/turtlebot3_teleop:/root/home/foxy_ws/install/turtlebot3_example:/root/home/foxy_ws/install/squarbo_gazebo:/opt/ros/foxy:/opt/ros/noetic')]), 'shell': False}
+[4.310859] (-) TimerEvent: {}
+[4.330646] (hoverboard_mvp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target move_controller_node\x1b[0m\n'}
+[4.411132] (-) TimerEvent: {}
+[4.471135] (hoverboard_mvp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/move_controller_node.dir/src/mode_controller.cpp.o\x1b[0m\n'}
+[4.511200] (-) TimerEvent: {}
+[4.611507] (-) TimerEvent: {}
+[4.711859] (-) TimerEvent: {}
+[4.812219] (-) TimerEvent: {}
+[4.912587] (-) TimerEvent: {}
+[5.013014] (-) TimerEvent: {}
+[5.114341] (-) TimerEvent: {}
+[5.215068] (-) TimerEvent: {}
+[5.315452] (-) TimerEvent: {}
+[5.415848] (-) TimerEvent: {}
+[5.516760] (-) TimerEvent: {}
+[5.617239] (-) TimerEvent: {}
+[5.717762] (-) TimerEvent: {}
+[5.818133] (-) TimerEvent: {}
+[5.918517] (-) TimerEvent: {}
+[6.018883] (-) TimerEvent: {}
+[6.119239] (-) TimerEvent: {}
+[6.219571] (-) TimerEvent: {}
+[6.319947] (-) TimerEvent: {}
+[6.420358] (-) TimerEvent: {}
+[6.520784] (-) TimerEvent: {}
+[6.621261] (-) TimerEvent: {}
+[6.721628] (-) TimerEvent: {}
+[6.822018] (-) TimerEvent: {}
+[6.922354] (-) TimerEvent: {}
+[7.022773] (-) TimerEvent: {}
+[7.123118] (-) TimerEvent: {}
+[7.223446] (-) TimerEvent: {}
+[7.323821] (-) TimerEvent: {}
+[7.424329] (-) TimerEvent: {}
+[7.524786] (-) TimerEvent: {}
+[7.625270] (-) TimerEvent: {}
+[7.725918] (-) TimerEvent: {}
+[7.826429] (-) TimerEvent: {}
+[7.926972] (-) TimerEvent: {}
+[8.027421] (-) TimerEvent: {}
+[8.127808] (-) TimerEvent: {}
+[8.228197] (-) TimerEvent: {}
+[8.328575] (-) TimerEvent: {}
+[8.428977] (-) TimerEvent: {}
+[8.529351] (-) TimerEvent: {}
+[8.629724] (-) TimerEvent: {}
+[8.730055] (-) TimerEvent: {}
+[8.830393] (-) TimerEvent: {}
+[8.930734] (-) TimerEvent: {}
+[9.031081] (-) TimerEvent: {}
+[9.131476] (-) TimerEvent: {}
+[9.231802] (-) TimerEvent: {}
+[9.332147] (-) TimerEvent: {}
+[9.432520] (-) TimerEvent: {}
+[9.532983] (-) TimerEvent: {}
+[9.633327] (-) TimerEvent: {}
+[9.733724] (-) TimerEvent: {}
+[9.834097] (-) TimerEvent: {}
+[9.934493] (-) TimerEvent: {}
+[10.034862] (-) TimerEvent: {}
+[10.135532] (-) TimerEvent: {}
+[10.235902] (-) TimerEvent: {}
+[10.336438] (-) TimerEvent: {}
+[10.436838] (-) TimerEvent: {}
+[10.537195] (-) TimerEvent: {}
+[10.637568] (-) TimerEvent: {}
+[10.737939] (-) TimerEvent: {}
+[10.838237] (-) TimerEvent: {}
+[10.938571] (-) TimerEvent: {}
+[11.038947] (-) TimerEvent: {}
+[11.139342] (-) TimerEvent: {}
+[11.239789] (-) TimerEvent: {}
+[11.340186] (-) TimerEvent: {}
+[11.440577] (-) TimerEvent: {}
+[11.540979] (-) TimerEvent: {}
+[11.641476] (-) TimerEvent: {}
+[11.741949] (-) TimerEvent: {}
+[11.842381] (-) TimerEvent: {}
+[11.943200] (-) TimerEvent: {}
+[12.043745] (-) TimerEvent: {}
+[12.144079] (-) TimerEvent: {}
+[12.244464] (-) TimerEvent: {}
+[12.345016] (-) TimerEvent: {}
+[12.376548] (hoverboard_mvp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable move_controller_node\x1b[0m\n'}
+[12.445139] (-) TimerEvent: {}
+[12.545510] (-) TimerEvent: {}
+[12.645852] (-) TimerEvent: {}
+[12.746248] (-) TimerEvent: {}
+[12.823546] (hoverboard_mvp) StdoutLine: {'line': b'[100%] Built target move_controller_node\n'}
+[12.843113] (hoverboard_mvp) CommandEnded: {'returncode': 0}
+[12.846806] (-) TimerEvent: {}
+[12.885638] (hoverboard_mvp) JobProgress: {'identifier': 'hoverboard_mvp', 'progress': 'install'}
+[12.902308] (hoverboard_mvp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp'], 'cwd': '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'fa5be3975c43'), ('ROS_PACKAGE_PATH', '/opt/ros/noetic/share'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/home/foxy_ws/install/zero_planner/lib:/root/home/foxy_ws/install/nav2_straightline_planner/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/opt/ros/noetic/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/home/foxy_ws/src/ros2_ex'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/home/foxy_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/noetic/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/root/home/foxy_ws/install/dolly_gazebo/share/dolly_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('AMENT_PREFIX_PATH', '/root/home/foxy_ws/install/zero_planner:/root/home/foxy_ws/install/turtlebot3_simulations:/root/home/foxy_ws/install/turtlebot3_gazebo:/root/home/foxy_ws/install/turtlebot3:/root/home/foxy_ws/install/turtlebot3_teleop:/root/home/foxy_ws/install/turtlebot3_bringup:/root/home/foxy_ws/install/turtlebot3_node:/root/home/foxy_ws/install/turtlebot3_navigation2:/root/home/foxy_ws/install/turtlebot3_fake_node:/root/home/foxy_ws/install/turtlebot3_example:/root/home/foxy_ws/install/turtlebot3_description:/root/home/foxy_ws/install/turtlebot3_cartographer:/root/home/foxy_ws/install/squarbo_simulation:/root/home/foxy_ws/install/squarbo_gazebo:/root/home/foxy_ws/install/squarbo_description:/root/home/foxy_ws/install/nav2_straightline_planner:/root/home/foxy_ws/install/my_package:/root/home/foxy_ws/install/hoverboard_mvp:/root/home/foxy_ws/install/dolly:/root/home/foxy_ws/install/dolly_gazebo:/root/home/foxy_ws/install/dolly_follow:/opt/ros/foxy'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:/root/home/foxy_ws/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/build/hoverboard_mvp'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/home/foxy_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/root/home/foxy_ws/install/turtlebot3_example/lib/python3.8/site-packages:/root/home/foxy_ws/install/squarbo_gazebo/lib/python3.8/site-packages:/root/home/foxy_ws/install/hoverboard_mvp/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/home/foxy_ws/install/zero_planner:/root/home/foxy_ws/install/turtlebot3_simulations:/root/home/foxy_ws/install/turtlebot3_gazebo:/root/home/foxy_ws/install/turtlebot3:/root/home/foxy_ws/install/turtlebot3_bringup:/root/home/foxy_ws/install/turtlebot3_node:/root/home/foxy_ws/install/turtlebot3_navigation2:/root/home/foxy_ws/install/turtlebot3_fake_node:/root/home/foxy_ws/install/turtlebot3_description:/root/home/foxy_ws/install/turtlebot3_cartographer:/root/home/foxy_ws/install/squarbo_simulation:/root/home/foxy_ws/install/squarbo_description:/root/home/foxy_ws/install/nav2_straightline_planner:/root/home/foxy_ws/install/my_package:/root/home/foxy_ws/install/hoverboard_mvp:/root/home/foxy_ws/install/dolly:/root/home/foxy_ws/install/dolly_gazebo:/root/home/foxy_ws/install/dolly_follow:/root/home/foxy_ws/install/turtlebot3_teleop:/root/home/foxy_ws/install/turtlebot3_example:/root/home/foxy_ws/install/squarbo_gazebo:/opt/ros/foxy:/opt/ros/noetic')]), 'shell': False}
+[12.918375] (hoverboard_mvp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.918725] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/hoverboard_mvp/move_controller_node\n'}
+[12.921868] (hoverboard_mvp) StdoutLine: {'line': b'-- Set runtime path of "/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/hoverboard_mvp/move_controller_node" to ""\n'}
+[12.922223] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//launch\n'}
+[12.922517] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//launch/bringup_launch.py\n'}
+[12.922726] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//launch/robot_simulation_launch.py\n'}
+[12.923013] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//launch/hoverboard.launch.py\n'}
+[12.923205] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//launch/slam_launch.py\n'}
+[12.923408] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//launch/rviz_launch.py\n'}
+[12.923627] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//launch/spawn_robot.launch.py\n'}
+[12.924476] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//launch/controllers.launch.py\n'}
+[12.924677] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//launch/localization_launch.py\n'}
+[12.924876] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//launch/navigation_launch.py\n'}
+[12.925023] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//worlds\n'}
+[12.925225] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//worlds/empty.world\n'}
+[12.925365] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//worlds/diff_driver_robot.world\n'}
+[12.925549] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//urdf\n'}
+[12.925741] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//urdf/hoverboard.urdf\n'}
+[12.925858] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//rviz\n'}
+[12.926021] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//rviz/nav2_default_view.rviz\n'}
+[12.926195] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//params\n'}
+[12.926315] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//params/nav2_params.yaml\n'}
+[12.926506] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//maps\n'}
+[12.926631] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//maps/simple.pgm\n'}
+[12.927586] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp//maps/simple.yaml\n'}
+[12.927960] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/environment/pythonpath.sh\n'}
+[12.928270] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/environment/pythonpath.dsv\n'}
+[12.928479] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/python3.8/site-packages/hoverboard_mvp\n'}
+[12.928680] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/python3.8/site-packages/hoverboard_mvp/path_controller.py\n'}
+[12.928948] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/python3.8/site-packages/hoverboard_mvp/__init__.py\n'}
+[12.946889] (-) TimerEvent: {}
+[12.993484] (hoverboard_mvp) StdoutLine: {'line': b"Listing '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/python3.8/site-packages/hoverboard_mvp'...\n"}
+[12.993762] (hoverboard_mvp) StdoutLine: {'line': b"Compiling '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/python3.8/site-packages/hoverboard_mvp/__init__.py'...\n"}
+[12.993955] (hoverboard_mvp) StdoutLine: {'line': b"Compiling '/root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/python3.8/site-packages/hoverboard_mvp/path_controller.py'...\n"}
+[13.006761] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/lib/hoverboard_mvp/path_controller_node.py\n'}
+[13.007306] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/ament_index/resource_index/package_run_dependencies/hoverboard_mvp\n'}
+[13.007626] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/ament_index/resource_index/parent_prefix_path/hoverboard_mvp\n'}
+[13.008037] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/environment/ament_prefix_path.sh\n'}
+[13.008285] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/environment/ament_prefix_path.dsv\n'}
+[13.008484] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/environment/path.sh\n'}
+[13.008703] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/environment/path.dsv\n'}
+[13.008898] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/local_setup.bash\n'}
+[13.009142] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/local_setup.sh\n'}
+[13.009372] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/local_setup.zsh\n'}
+[13.009604] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/local_setup.dsv\n'}
+[13.009807] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.dsv\n'}
+[13.009997] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/ament_index/resource_index/packages/hoverboard_mvp\n'}
+[13.010204] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/cmake/hoverboard_mvpConfig.cmake\n'}
+[13.010396] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/cmake/hoverboard_mvpConfig-version.cmake\n'}
+[13.010582] (hoverboard_mvp) StdoutLine: {'line': b'-- Installing: /root/home/foxy_ws/src/tech_palcantara/hoverboard_mvp/install/hoverboard_mvp/share/hoverboard_mvp/package.xml\n'}
+[13.013028] (hoverboard_mvp) CommandEnded: {'returncode': 0}
+[13.048080] (-) TimerEvent: {}
+[13.112566] (hoverboard_mvp) JobEnded: {'identifier': 'hoverboard_mvp', 'rc': 0}
+[13.114971] (-) EventReactorShutdown: {}
