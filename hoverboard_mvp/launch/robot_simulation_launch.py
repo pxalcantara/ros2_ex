@@ -54,7 +54,7 @@ def generate_launch_description():
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
         'map',
-        default_value=os.path.join(bringup_dir, 'maps', 'simple.yaml'),
+        default_value=os.path.join(bringup_dir, 'maps', 'empty.yaml'),
         description='Full path to map file to load')
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(
@@ -95,7 +95,7 @@ def generate_launch_description():
 
     declare_use_rviz_cmd = DeclareLaunchArgument(
         'use_rviz',
-        default_value='False',
+        default_value='True',
         description='Whether to start RVIZ')
 
     declare_simulator_cmd = DeclareLaunchArgument(
@@ -103,14 +103,11 @@ def generate_launch_description():
         default_value='False',
         description='Whether to execute gzclient)')
 
-    # empty_world = os.path.join(get_package_share_directory('squarbo_gazebo'), 'gazebo_ros_state.world')
-    
     urdf = os.path.join(get_package_share_directory('hoverboard_mvp'), 'urdf', 'hoverboard.urdf')
 
     
     start_robot_standalone_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-                # os.path.join(get_package_share_directory('hoverboard_mvp'), 'spawn_squarbo.launch.py')),
                 os.path.join(launch_dir, 'spawn_robot.launch.py')),
         condition=IfCondition(use_simulator))
 

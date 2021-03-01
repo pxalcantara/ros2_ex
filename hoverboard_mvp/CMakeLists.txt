@@ -25,7 +25,6 @@ find_package(nav_msgs REQUIRED)
 find_package(example_interfaces REQUIRED)
 find_package(nav2_common REQUIRED)
 find_package(navigation2 REQUIRED)
-find_package(tf2 REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -61,7 +60,6 @@ ament_python_install_package(${PROJECT_NAME})
 
 install(PROGRAMS
   scripts/path_controller_node.py
-  # scripts/set_path.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

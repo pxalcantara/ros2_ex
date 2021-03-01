@@ -318,7 +318,7 @@
 
         <ros>
           <!-- <namespace>/sim</namespace> -->
-          <!-- <remapping>cmd_vel:=sim/cmd_vel</remapping> -->
+          <remapping>cmd_vel:=sim/cmd_vel</remapping>
         </ros>
 
       <update_rate>50</update_rate>

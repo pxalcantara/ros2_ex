@@ -11,7 +11,7 @@ from nav2_common.launch import RewrittenYaml
 
 def generate_launch_description():
     # Get the launch directory
-    bringup_dir = get_package_share_directory('squarbo_simulation')
+    bringup_dir = get_package_share_directory('hoverboard_mvp')
 
     namespace = LaunchConfiguration('namespace')
     map_yaml_file = LaunchConfiguration('map')
@@ -44,7 +44,7 @@ def generate_launch_description():
 
         DeclareLaunchArgument(
             'map',
-            default_value=os.path.join(bringup_dir, 'maps', 'squarhold.yaml'),
+            default_value=os.path.join(bringup_dir, 'maps', 'empty.yaml'),
             description='Full path to map yaml file to load'),
 
         DeclareLaunchArgument(
@@ -76,14 +76,6 @@ def generate_launch_description():
             output='screen',
             parameters=[configured_params],
             remappings=remappings),
-
-        # Node(
-        #     package='nav2_amcl',
-        #     executable='amcl',
-        #     name='amcl',
-        #     output='screen',
-        #     parameters=[configured_params],
-        #     remappings=remappings),
 
         Node(
             package='nav2_lifecycle_manager',

@@ -5,8 +5,6 @@
 namespace mode_controller {
 
   ModeController::ModeController() : Node("mode_controller"), semi_autonomous_mode_(false) {
-    // auto default_qos = rclcpp::QoS(rclcpp::SystemDefaultsQoS());
-    // Subscribe to sensor messages
     teleop_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
         "/teleop/cmd_vel", 10, std::bind(&ModeController::teleopTwistCB, this, std::placeholders::_1));
 
@@ -17,10 +15,9 @@ namespace mode_controller {
       "set_semi_autonomous", std::bind(&ModeController::setModeCB, this,
        std::placeholders::_1, std::placeholders::_2));
 
-    // Advertise velocity commands
     cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/sim/cmd_vel", 10);
 
-    RCLCPP_INFO(this->get_logger(), "Translate");
+    RCLCPP_INFO(this->get_logger(), "Mode Controller Started!");
   }
 
   ModeController::~ModeController() {}
@@ -43,7 +40,7 @@ namespace mode_controller {
       this->updateTwist(_msg);
 
     } else {
-      RCLCPP_WARN(this->get_logger(), "Hoverboard in autonomous mode, should be controlled by /nav/cmd_vel");
+      RCLCPP_WARN(this->get_logger(), "Hoverboard in autonomous mode, should be controlled by /cmd_vel");
     }
   }
 
@@ -60,24 +57,23 @@ namespace mode_controller {
                                             std::shared_ptr<example_interfaces::srv::SetBool::Response> _response) { 
     semi_autonomous_mode_ = _request->data;
 
-    RCLCPP_INFO_STREAM(this->get_logger(), "Semi Autonomous mode set to: " << semi_autonomous_mode_);
+    if (semi_autonomous_mode_) {
+      RCLCPP_INFO_STREAM(this->get_logger(), "Semi Autonomous mode enabled");
+    } else {
+      RCLCPP_INFO_STREAM(this->get_logger(), "Semi Autonomous mode disabled");
+    }
 
     _response->success = true; 
   }
 }
 
-int main(int argc, char *argv[])
-{
-  // Forward command line arguments to ROS
+int main(int argc, char *argv[]) {
   rclcpp::init(argc, argv);
 
-  // Create a node
   auto node = std::make_shared<mode_controller::ModeController>();
 
-  // Run node until it's exited
   rclcpp::spin(node);
 
-  // Clean up
   rclcpp::shutdown();
   return 0;
 }

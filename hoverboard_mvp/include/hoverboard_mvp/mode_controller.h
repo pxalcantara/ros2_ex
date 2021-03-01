@@ -9,8 +9,7 @@
 
 namespace mode_controller {
 
-class ModeController : public rclcpp::Node
-{
+class ModeController : public rclcpp::Node {
  public:
   /**
   * @class ModeController class
@@ -43,7 +42,7 @@ class ModeController : public rclcpp::Node
   /**
    * @brief Service callback function to change the mode.
    *  
-   * There is 2 modes, teleop and semi-autonomous.
+   * There are 2 modes, teleop and semi-autonomous.
    * - _request.data = true -> set semi-autonomous mode;
    * - _request.data = false -> set teleop mode;
    *
