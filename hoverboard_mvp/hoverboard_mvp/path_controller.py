@@ -37,12 +37,7 @@ class PathController(Node):
     self.position_distance_th = 1.0
     self.path_tracking = False
 
-    # q = Quaternion(1, 0, 0, 0)
-    # r_q = q.rotate(Quaternion(vector=[-1, 0, 0]))
-    # rotation = Quaternion(axis=[0.0, 0.0, 1.0], degrees=180)  
-    # print(q.degrees)
-    # print(r_q.elements)
-    # print(rotation.elements)
+    self.new_goal_th = 0.7
     
     self.get_logger().info('Path Controller Node Initialized')
 
@@ -67,8 +62,12 @@ class PathController(Node):
         self.action_client_status = 0 
         break
 
-      if self.action_client_status == GoalStatus.STATUS_SUCCEEDED:
-        # self.get_logger().info('Status %s ' % (self.action_client_status))
+      
+      distance = self._get_points_distance(self.path_poses[poses_cout].pose.pose.position.x, self.current_pose.pose.pose.position.x,
+                                           self.path_poses[poses_cout].pose.pose.position.y, self.current_pose.pose.pose.position.y)
+      
+      if distance <= self.new_goal_th:
+        self.get_logger().info('Short distance')
         poses_cout -= 1
 
         self.send_goal(self.path_poses[poses_cout])
@@ -92,7 +91,9 @@ class PathController(Node):
     return GoalResponse.ACCEPT
 
   def odometry_cb(self, msg):
-    self._update_path_poses(msg)    
+    self._update_path_poses(msg)
+
+    self.current_pose = msg    
     
   def start_tracking_cb(self, request, response):
     self.path_tracking = request.data
@@ -111,7 +112,8 @@ class PathController(Node):
     
     new_x_position = new_pose.pose.pose.position.x
     new_y_position = new_pose.pose.pose.position.y
-    distance = math.sqrt((new_x_position - last_x_position)**2 + (new_y_position - last_y_position)**2)
+
+    distance = self._get_points_distance(new_x_position, last_x_position, new_y_position, last_y_position)
 
     if distance >= self.position_distance_th:
       self.get_logger().info('Pose added to Path' )
@@ -126,6 +128,20 @@ class PathController(Node):
       else:
         if self._check_pose_distance(new_pose):
           self.path_poses.append(new_pose)
+  
+  def _rotate_orientation(self, orientation):
+    quaternion_original = Quaternion(orientation.w, orientation.x, orientation.y, orientation.z)
+
+    rotation = Quaternion(axis=[0.0, 0.0, 1.0], degrees=180)
+
+    quaternion_final = quaternion_original * rotation
+
+    return quaternion_final
+
+  def _get_points_distance(self, target_x, current_x, target_y, current_y):
+    distance = math.sqrt((target_x - current_x)**2 + (target_y - current_y)**2)
+
+    return distance
 
   def destroy(self):
     self._action_server.destroy()
@@ -137,17 +153,17 @@ class PathController(Node):
 
     goal_msg = NavigateToPose.Goal()
 
+    quaternion_final = self._rotate_orientation(goal_pose.pose.pose.orientation)  
+
     goal_msg.pose.pose.position.x = goal_pose.pose.pose.position.x
     goal_msg.pose.pose.position.y = goal_pose.pose.pose.position.y
     goal_msg.pose.pose.position.z = goal_pose.pose.pose.position.z
     
-    goal_msg.pose.pose.orientation.x = goal_pose.pose.pose.orientation.x
-    goal_msg.pose.pose.orientation.y = goal_pose.pose.pose.orientation.y
-    goal_msg.pose.pose.orientation.z = goal_pose.pose.pose.orientation.z
-    goal_msg.pose.pose.orientation.w = goal_pose.pose.pose.orientation.w
+    goal_msg.pose.pose.orientation.x = quaternion_final[1]
+    goal_msg.pose.pose.orientation.y = quaternion_final[2]
+    goal_msg.pose.pose.orientation.z = quaternion_final[3]
+    goal_msg.pose.pose.orientation.w = quaternion_final[0]
     
-    self.get_logger().info('Sending goal.. %s' % (goal_pose.pose.pose.position.x))
-
     self._send_goal_future = self._nav_client.send_goal_async(goal_msg)
     self._send_goal_future.add_done_callback(self.goal_response_cb)
 
