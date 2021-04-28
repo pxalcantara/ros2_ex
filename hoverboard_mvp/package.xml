@@ -22,7 +22,7 @@
   <depend>navigation2</depend>
   <depend>action_msgs</depend>
   
-  <depend>pyquaternion</depend>
+  <!-- <depend>pyquaternion</depend> -->
   
   <member_of_group>rosidl_interface_packages</member_of_group>
 

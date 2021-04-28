@@ -6,6 +6,7 @@ from launch.actions import ExecuteProcess
 from launch.substitutions import LaunchConfiguration
 from launch.conditions import IfCondition
 from launch_ros.actions import Node
+import xacro
 
 def generate_launch_description():
 
@@ -21,5 +22,4 @@ def generate_launch_description():
            cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py', '-entity',
                 'hoverboard', '-file', urdf, '-x 0.0', '-y 0.0' ],
            output='screen'),
-
     ])
