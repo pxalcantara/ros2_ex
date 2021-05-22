@@ -12,7 +12,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     # Get the launch directory
-    bringup_dir = get_package_share_directory('hoverboard_mvp')
+    bringup_dir = get_package_share_directory('robot_controller')
     sim_dir = get_package_share_directory('robot_simulation')
     nav_dir = get_package_share_directory('robot_navigation')
     launch_dir = os.path.join(bringup_dir, 'launch')

@@ -2,7 +2,7 @@
 import rclpy
 from rclpy.executors import MultiThreadedExecutor
 
-from hoverboard_mvp.path_controller import PathController
+from robot_controller.path_controller import PathController
 
 def main(args=None):
   

@@ -13,7 +13,7 @@ from example_interfaces.srv import SetBool
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Pose, Twist
 from nav2_msgs.action import NavigateToPose
-from hoverboard_mvp.action import GoHome
+from robot_controller.action import GoHome
 
 
 import math 

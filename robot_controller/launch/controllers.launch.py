@@ -11,12 +11,12 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     move_controller_node = Node(
-        package='hoverboard_mvp',
+        package='robot_controller',
         executable='move_controller_node'
     )
 
     path_controller_node = Node(
-        package='hoverboard_mvp',
+        package='robot_controller',
         executable='path_controller_node.py'
     )
 

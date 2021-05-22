@@ -1,5 +1,5 @@
-#ifndef HOVERBOARD_MVP_MODE_CONTROLLER_HPP_
-#define HOVERBOARD_MVP_MODE_CONTROLLER_HPP_
+#ifndef ROBOT_CONTROLLER_MODE_CONTROLLER_HPP_
+#define ROBOT_CONTROLLER_MODE_CONTROLLER_HPP_
 
 #include <geometry_msgs/msg/twist.hpp>
 #include <example_interfaces/srv/set_bool.hpp>
@@ -73,4 +73,4 @@ class ModeController : public rclcpp::Node {
 
 }  // namespace mode_controller
 
-#endif // HOVERBOARD_MVP_MODE_CONTROLLER_HPP_
+#endif // ROBOT_CONTROLLER_MODE_CONTROLLER_HPP_

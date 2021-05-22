@@ -10,7 +10,7 @@ import xacro
 
 def generate_launch_description():
 
-    world = os.path.join(get_package_share_directory('hoverboard_mvp'), 'worlds', 'empty.world')
+    world = os.path.join(get_package_share_directory('robot_simulation'), 'worlds', 'empty.world')
     # urdf = os.path.join(get_package_share_directory('hoverboard_mvp'), 'urdf', 'hoverboard.urdf')
     urdf_file = os.path.join(get_package_share_directory('mobile_robot_description'), 'urdf/quimera_robot.urdf.xacro')
     # doc = xacro.parse(open(urdf_file))
