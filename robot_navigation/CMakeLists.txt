@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(hoverboard_mvp)
+project(robot_navigation)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -18,53 +18,50 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(rclpy REQUIRED)
+# find_package(rclcpp REQUIRED)
+# find_package(rclpy REQUIRED)
 find_package(geometry_msgs REQUIRED) 
 find_package(nav_msgs REQUIRED)
 find_package(example_interfaces REQUIRED)
 find_package(nav2_common REQUIRED)
 find_package(navigation2 REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
-find_package(robot_navigation REQUIRED)
-find_package(robot_simulation REQUIRED)
+# find_package(rosidl_default_generators REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "action/GoHome.action"
-)
+# rosidl_generate_interfaces(${PROJECT_NAME}
+#   "action/GoHome.action"
+# )
 
-include_directories(
-  include
-)
+# include_directories(
+#   include
+# )
 
-add_executable(move_controller_node src/mode_controller.cpp)
-ament_target_dependencies(move_controller_node rclcpp geometry_msgs example_interfaces)
+# add_executable(move_controller_node src/mode_controller.cpp)
+# ament_target_dependencies(move_controller_node rclcpp geometry_msgs example_interfaces)
 
 
-install(TARGETS
-  move_controller_node
-  DESTINATION lib/${PROJECT_NAME})
+# install(TARGETS
+#   move_controller_node
+#   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY
   launch
-  src
   # worlds
   # urdf
-  # rviz
-  # params
-  # maps
+  rviz
+  params
+  maps
   DESTINATION share/${PROJECT_NAME}/
 )
 
-ament_python_install_package(${PROJECT_NAME})
+# ament_python_install_package(${PROJECT_NAME})
 
-install(PROGRAMS
-  scripts/path_controller_node.py
-  DESTINATION lib/${PROJECT_NAME}
-)
+# install(PROGRAMS
+#   scripts/path_controller_node.py
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

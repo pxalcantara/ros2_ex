@@ -13,6 +13,8 @@ from launch_ros.actions import Node
 def generate_launch_description():
     # Get the launch directory
     bringup_dir = get_package_share_directory('hoverboard_mvp')
+    sim_dir = get_package_share_directory('robot_simulation')
+    nav_dir = get_package_share_directory('robot_navigation')
     launch_dir = os.path.join(bringup_dir, 'launch')
 
     # Create the launch configuration variables
@@ -54,7 +56,7 @@ def generate_launch_description():
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
         'map',
-        default_value=os.path.join(bringup_dir, 'maps', 'empty.yaml'),
+        default_value=os.path.join(nav_dir, 'maps', 'empty.yaml'),
         description='Full path to map file to load')
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(
@@ -64,7 +66,7 @@ def generate_launch_description():
 
     declare_params_file_cmd = DeclareLaunchArgument(
         'params_file',
-        default_value=os.path.join(bringup_dir, 'params', 'nav2_params.yaml'),
+        default_value=os.path.join(nav_dir, 'params', 'nav2_params.yaml'),
         description='Full path to the ROS2 parameters file to use for all launched nodes')
 
     declare_bt_xml_cmd = DeclareLaunchArgument(
@@ -80,7 +82,7 @@ def generate_launch_description():
 
     declare_rviz_config_file_cmd = DeclareLaunchArgument(
         'rviz_config_file',
-        default_value=os.path.join(bringup_dir, 'rviz', 'nav2_default_view.rviz'),
+        default_value=os.path.join(nav_dir, 'rviz', 'nav2_default_view.rviz'),
         description='Full path to the RVIZ config file to use')
 
     declare_use_simulator_cmd = DeclareLaunchArgument(
@@ -103,12 +105,11 @@ def generate_launch_description():
         default_value='False',
         description='Whether to execute gzclient)')
 
-    urdf = os.path.join(get_package_share_directory('hoverboard_mvp'), 'urdf', 'hoverboard.urdf')
+    urdf = os.path.join(get_package_share_directory('robot_simulation'), 'urdf', 'hoverboard.urdf')
 
-    
     start_robot_standalone_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-                os.path.join(launch_dir, 'spawn_robot.launch.py')),
+                os.path.join(sim_dir, 'launch', 'spawn_robot.launch.py')),
         condition=IfCondition(use_simulator))
 
     start_robot_state_publisher_cmd = Node(
@@ -123,14 +124,14 @@ def generate_launch_description():
         arguments=[urdf])
 
     rviz_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(os.path.join(launch_dir, 'rviz_launch.py')),
+        PythonLaunchDescriptionSource(os.path.join(nav_dir, 'launch', 'rviz_launch.py')),
         condition=IfCondition(use_rviz),
         launch_arguments={'namespace': '',
                           'use_namespace': 'False',
                           'rviz_config': rviz_config_file}.items())
 
     bringup_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(os.path.join(launch_dir, 'bringup_launch.py')),
+        PythonLaunchDescriptionSource(os.path.join(nav_dir, 'launch', 'bringup_launch.py')),
         launch_arguments={'namespace': namespace,
                           'use_namespace': use_namespace,
                           'slam': slam,
