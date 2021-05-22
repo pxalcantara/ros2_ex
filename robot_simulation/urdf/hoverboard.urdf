@@ -250,12 +250,10 @@
       </inertial>
   </link>
 
-
-  <!-- hokuyo gazebo references -->
   <gazebo reference="camera_link">
-    <sensor type="depth" name="camera1">
+    <sensor type="camera" name="camera1">
       <update_rate>60</update_rate>
-      <visualize>false</visualize>
+      <visualize>true</visualize>
       <camera>
         <horizontal_fov>1.92</horizontal_fov>
         <image>
@@ -283,11 +281,11 @@
           <namespace>sim_cam</namespace>
 
           <!-- topics need to be prefixed with camera_name for remapping -->
-          <!-- <remapping>mycamera/image_raw:=mycamera/image_demo</remapping>
-          <remapping>mycamera/depth/image_raw:=mycamera/depth_demo</remapping>
-          <remapping>mycamera/camera_info:=mycamera/raw_cam_info_demo</remapping>
-          <remapping>mycamera/depth/camera_info:=mycamera/depth_cam_info_demo</remapping>
-          <remapping>mycamera/points:=mycamera/points_demo</remapping> -->
+          <remapping>image_raw:=image_demo</remapping>
+          <!--<remapping>camera_info:=mycamera/raw_cam_info_demo</remapping>
+          <remapping>depth/image_raw:=mycamera/depth_demo</remapping>
+          <remapping>depth/camera_info:=mycamera/depth_cam_info_demo</remapping>
+          <remapping>points:=mycamera/points_demo</remapping> -->
         </ros>
 
         <!-- omit camera_name to default to sensor name -->
@@ -295,8 +293,8 @@
 
         <!-- frame_name>omit so it defaults to link name</frame_name-->
 
-        <min_depth>0.1</min_depth>
-        <max_depth>500</max_depth>
+        <!--<min_depth>0.1</min_depth>
+        <max_depth>500</max_depth>-->
       </plugin>
     </sensor>
   </gazebo>
