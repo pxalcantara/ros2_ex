@@ -10,6 +10,10 @@
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_python</buildtool_depend>
 
+   <exec_depend>robot_simulation</exec_depend>
+   <exec_depend>robot_navigation</exec_depend>
+   <exec_depend>robot_controller</exec_depend>
+
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
