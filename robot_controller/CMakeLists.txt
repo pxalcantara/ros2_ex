@@ -25,8 +25,8 @@ find_package(nav_msgs REQUIRED)
 find_package(example_interfaces REQUIRED)
 find_package(nav2_common REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-find_package(robot_navigation REQUIRED)
-find_package(robot_simulation REQUIRED)
+# find_package(robot_navigation REQUIRED)
+# find_package(robot_simulation REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)

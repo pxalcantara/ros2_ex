@@ -52,7 +52,7 @@ def generate_launch_description():
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
         'map',
-        default_value=os.path.join(nav_dir, 'maps', 'empty.yaml'),
+        default_value=os.path.join(nav_dir, 'maps', 'map.yaml'),
         description='Full path to map file to load')
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(
@@ -101,11 +101,17 @@ def generate_launch_description():
         default_value='False',
         description='Whether to execute gzclient)')
 
-    urdf = os.path.join(get_package_share_directory('robot_simulation'), 'urdf', 'hoverboard.urdf')
+    # urdf = os.path.join(get_package_share_directory('robot_simulation'), 'urdf', 'hoverboard.urdf')
+    urdf = os.path.join(get_package_share_directory('mobile_robot_models'), 'urdf', 'quimera_robot.urdf.xacro')
+
+    # start_robot_standalone_cmd = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(
+    #             os.path.join(sim_dir, 'launch', 'spawn_robot.launch.py')),
+    #     condition=IfCondition(use_simulator))
 
     start_robot_standalone_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-                os.path.join(sim_dir, 'launch', 'spawn_robot.launch.py')),
+                os.path.join(sim_dir, 'launch', 'spawn_mobile_robot.launch.py')),
         condition=IfCondition(use_simulator))
 
     start_robot_state_publisher_cmd = Node(

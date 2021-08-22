@@ -23,7 +23,7 @@ install(DIRECTORY
   launch
   worlds
   urdf
-  rviz
+  # rviz
   # params
   # maps
   DESTINATION share/${PROJECT_NAME}/
