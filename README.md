@@ -1,3 +1,26 @@
+## Instalation
+Install the vctool to setup your workspace 
+```bash
+  $ sudo apt-get install python3-vcstool
+```
+Clone this reposities inside your workspace using this branch. Import the repositories:
+
+```bash
+  $ vcs import < repositories_setup.yaml
+```
+
+Install the dependencies:
+```bash
+  $ rosdep install -i --from-path src --rosdistro foxy -y
+```
+
+Compile and build your workspace:
+```bash
+  $ colcon build --symlink-install
+```
+
+Compile and build the works
+
 ## Initialization
 The **ros2_ex** package is a ROS 2 metapackage. It uses the Python3 package `pyquaterion`. To install this package run:
 ```bash

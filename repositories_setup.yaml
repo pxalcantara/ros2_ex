@@ -1,0 +1,9 @@
+repositories:
+  mobile_robot_description:
+    type: git
+    url: git@github.com:ros-mobile-robots/mobile_robot_description.git
+    version: ros2-foxy
+  mobile_robot_models:
+    type: git
+    url: git@github.com:ros-mobile-robots/mobile_robot_models.git
+    version: ros2-foxy
